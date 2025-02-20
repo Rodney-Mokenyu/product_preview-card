@@ -141,15 +141,18 @@ button>img {
   
   @media screen  and (min-width: 901px) {
 
+
+    body {
+        padding: 60px;
+
+    }
     .container {
         grid-template-columns: 1fr 1fr;
         background-color:var(--sec-color2);
         align-self: center;
-        margin-left: 2.5rem;
-        margin-top: 5rem;
         height: auto;
-        width:200rem;
-        max-width:800px
+        margin-top: 3.5rem;
+        max-width:800px;    
         
       }
       section img {
