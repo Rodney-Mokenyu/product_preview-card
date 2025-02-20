@@ -1,0 +1,192 @@
+:root {
+    --primary-color: hsl(158, 36%, 37%);
+    --primary-color2: hsl(30, 38%, 92%);
+    --secondary-color: hsl(212, 21%, 14%);
+    --sec-color1: hsl(228, 12%, 48%);
+    --sec-color2: hsl(0, 0%, 100%);
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+
+    
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color2);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    background-color: var(--sec-color2);
+    
+    border-radius: 10px;
+    margin: 1em;
+    display: grid;
+    grid-template-columns:1fr;
+    justify-content: center;
+    align-items: center;
+    width:85%;
+    max-width: 95%;
+    height: auto; 
+    
+    
+}
+
+h1 {
+    font-family:'Fraunces', serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.section2, button {
+    margin: 1em;
+}
+
+.section2 span {
+    margin-left: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    color: gray;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    display: block;
+}
+
+
+section img {
+    width: 100%;
+    object-fit: cover;
+    position:relative;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 10px;
+    
+}
+
+#priceTag {
+
+    display: flex ;
+    
+    align-items: center;
+    gap: 2em;
+    color: var(--primary-color);
+    border-collapse: collapse;
+    height: fit-content;
+    font-size: 10px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#priceTag > aside {
+    color: grey; 
+    font-size: large;
+    
+}
+
+
+button {
+    margin-top: 0rem;
+    background-color: var(--primary-color);
+    padding: 1em;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    border: 0;
+    margin-bottom: 4rem;
+    margin-left: 0;
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button>img {
+    margin-right: 10px;
+    
+}
+
+/* Media query for tablets */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    /* Your styles for tablet screens here */
+    .container {
+      grid-template-columns: 1fr 1fr;
+      background-color:var(--sec-color2);
+      align-self: center;
+      margin-left: 2.5rem;
+      margin-top: 5rem;
+      height: auto;
+      
+    }
+    section img {
+        width: 100%;
+        height:100%;
+        
+    }
+    #sectioin1 {
+        height: 100%;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.95rem;
+    }
+    
+    
+
+  }
+  
+  @media screen  and (min-width: 901px) {
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+        background-color:var(--sec-color2);
+        align-self: center;
+        margin-left: 2.5rem;
+        margin-top: 5rem;
+        height: auto;
+        width:200rem;
+        max-width:800px
+        
+      }
+      section img {
+          width: 100%;
+          height:100%;
+          
+      }
+      #sectioin1 {
+          height: 100%;
+          width: 100%;
+      }
+  
+      h1 {
+          font-size: 1.95rem;
+      }
+    
+  }
+
+  /* For smaller mobile screens */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin: 1rem; /* Add a margin to prevent the content from touching edges */
+        min-height: 100vh; /* Ensures the container takes at least the full height of the viewport */
+    }
+
+    h1 {
+        font-size: 1.6rem; /* Adjust font size for small screens */
+    }
+
+    #priceTag {
+        font-size: 0.9rem; /* Make the price tag a bit smaller for small screens */
+        gap: 1rem; /* Adjust spacing for smaller screens */
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.8em; /* Adjust button padding */
+    }
+}
